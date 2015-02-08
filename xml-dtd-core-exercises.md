@@ -28,8 +28,8 @@ The XML data is [here] (https://prod-c2g.s3.amazonaws.com/db/Winter2013/files/co
    There are multiple departments, each with a department chair, some courses, and professors and/or lecturers 
    who teach courses. The XML data is [here] (https://prod-c2g.s3.amazonaws.com/db/Winter2013/files/courses-noID.xml)
 	
-```
-<!ELEMENT Course_Catalog (Department*)>
+ ```
+ <!ELEMENT Course_Catalog (Department*)>
     <!ELEMENT Department (Title, Chair, Course+)>
     <!ATTLIST Department Code CDATA #REQUIRED>  
     <!ELEMENT Chair (Professor)>
@@ -52,8 +52,8 @@ The XML data is [here] (https://prod-c2g.s3.amazonaws.com/db/Winter2013/files/co
    drawn from the Stanford course catalog. This version encodes the data using ID and IDREF(S) attributes. 
    The XML data is [here] (https://prod-c2g.s3.amazonaws.com/db/Winter2013/files/courses-ID.xml)
 	
- ```
- <!ELEMENT Course_Catalog (Department*)>
+  ```
+  <!ELEMENT Course_Catalog (Department*)>
     <!ELEMENT Department (Title, Course+, (Professor|Lecturer)*)>
     <!ATTLIST Department Code CDATA #REQUIRED
         Chair IDREF #REQUIRED>
@@ -74,6 +74,6 @@ The XML data is [here] (https://prod-c2g.s3.amazonaws.com/db/Winter2013/files/co
     <!ELEMENT First_Name (#PCDATA)>
     <!ELEMENT Middle_Initial (#PCDATA)>
     <!ELEMENT Last_Name (#PCDATA)>
- ```
+  ```
 
   
